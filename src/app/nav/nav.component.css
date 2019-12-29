@@ -19,9 +19,42 @@
 .nav-item:nth-child(8) {
   animation-delay: 2.1s;
 }
+.nav-link:hover, .nav-link:focus{
+  color: blue !important
+}
+.desktop{
+  background-color: black;
+  transition: all 0.4s ease;
+  box-shadow: 0 1px 2px 2px white;
+}
+.header-scrolled{
+  padding-top: 20px ;
+  padding-bottom: 20px;
+  background-color: rgba(206, 206, 206,0.9);
+  box-shadow: 0 1px 1px 1px white;
+}
 .mobile{
     display: none;
 }
+.carousel-item{
+  width: 100%;
+  height: 90vh
+}
+.carousel-item > img{
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption > * {
+  position: relative
+}
+
+
+
 @media screen and (max-width: 768px) {
   .desktop {
     display: none;
