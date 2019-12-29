@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fluid-container desktop">
+  <a class="navbar-brand animated fadeInLeftBig" >Logo</a>
+  <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/">Home</a>
+    </li>
+    <li class="nav-item  animated fadeInRightBig">
+      <a class="nav-link" routerLink="/presentations">Présentation</a>
+    </li>
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/formations">Formations</a>
+    </li>
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/evenements">Evenements</a>
+    </li>
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/sponsors">Sponsors</a>
+    </li>
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/temoignages">Temoignages</a>
+    </li>
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/magazine">Notre magazine</a>
+    </li>
+    <li class="nav-item animated fadeInRightBig">
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </li>
+  </ul>
+</nav>
+
+<nav class="navbar navbar-expand-sm bg-dark mobile">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <span class="bg-light burger" (click)="show=!show"><i class="fas fa-align-justify"></i></span>
+    <ul class="d-flex flex-column bg-dark" [class.open]="show">
+        <li class="nav-item animated" [class.fadeInRightBig]="show">
+            <a class="nav-link" routerLink="/" (click)="show=!show">Home</a>
+          </li>
+          <li class="nav-item  animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/presentations" (click)="show=!show">Présentation</a>
+          </li>
+          <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/formations" (click)="show=!show">Formations</a>
+          </li>
+          <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/evenements" (click)="show=!show">Evenements</a>
+          </li>
+          <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/sponsors" (click)="show=!show">Sponsors</a>
+          </li>
+          <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/temoignages" (click)="show=!show">Temoignages</a>
+          </li>
+          <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/magazine" (click)="show=!show">Notre magazine</a>
+          </li>
+          <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/contact" (click)="show=!show">Contact</a>
+          </li>
+    </ul>
+</nav>

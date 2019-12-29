@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+.scrolltop i{
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    font-size: 25px;
+    padding: 7px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
