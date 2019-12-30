@@ -36,6 +36,16 @@
 .mobile{
     display: none;
 }
+
+.dropdown-menu{
+  background: rgb(53, 36, 36);
+}
+.dropdown-item{
+  color: white;
+}
+.dropdown-item:hover{
+  background: none;
+}
 .carousel-item{
   width: 100%;
   height: 90vh

@@ -7,11 +7,19 @@
     <li class="nav-item  animated fadeInRightBig">
       <a class="nav-link" routerLink="/presentations">Présentation</a>
     </li>
-    <li class="nav-item animated fadeInRightBig">
-      <a class="nav-link" routerLink="/formations">Formations</a>
+    <li class="nav-item dropdown animated fadeInRightBig">
+      <a class="nav-link dropdown-toggle"  routerLink="/evenements" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Formation</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownId">
+        <a class="dropdown-item" href="#">Cryptography</a>
+        <a class="dropdown-item" href="#">Steganography</a>
+      </div>
     </li>
-    <li class="nav-item animated fadeInRightBig">
-      <a class="nav-link" routerLink="/evenements">Evenements</a>
+    <li class="nav-item dropdown animated fadeInRightBig">
+      <a class="nav-link dropdown-toggle"  routerLink="/evenements" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Evenements</a>
+      <div class="dropdown-menu" aria-labelledby="dropdownId">
+        <a class="dropdown-item" href="#">Hack Me If You Can</a>
+        <a class="dropdown-item" href="#">Hack Zone</a>
+      </div>
     </li>
     <li class="nav-item animated fadeInRightBig">
       <a class="nav-link" routerLink="/sponsors">Sponsors</a>
@@ -41,9 +49,16 @@
           <li class="nav-item animated " [class.fadeInRightBig]="show" >
             <a class="nav-link" routerLink="/formations" (click)="show=!show">Formations</a>
           </li>
-          <li class="nav-item animated " [class.fadeInRightBig]="show" >
-            <a class="nav-link" routerLink="/evenements" (click)="show=!show">Evenements</a>
+          <li class="nav-item dropdown animated" [class.fadeInRightBig]="show">
+            <a class="nav-link dropdown-toggle"  routerLink="/evenements" (click)="show=!show" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownId">
+              <a class="dropdown-item" href="#">Hack Me If You Can</a>
+              <a class="dropdown-item" href="#">Hack Zone</a>
+            </div>
           </li>
+          <!-- <li class="nav-item animated " [class.fadeInRightBig]="show" >
+            <a class="nav-link" routerLink="/evenements" (click)="show=!show">Evenements</a>
+          </li> -->
           <li class="nav-item animated " [class.fadeInRightBig]="show" >
             <a class="nav-link" routerLink="/sponsors" (click)="show=!show">Sponsors</a>
           </li>
@@ -97,5 +112,3 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-<br>
-
