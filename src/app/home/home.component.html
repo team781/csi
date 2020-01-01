@@ -1,11 +1,11 @@
-<main>
+<main class="fluid-container">
   <section id="presentation">
     <h1 class="display-3 text-center">Presentation</h1>
     <div class="row">
-      <div class="col-md-4">
-        <img src="" alt="csi">
+      <div class="col-md-4 col-sm-12">
+        <img class="image" style="position:absolute"  src="../assets/img/logo.png" alt="csi">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8 col-sm-12">
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fugit quia sapiente voluptate, et atque, similique aut, repellat doloremque odit eaque facere corrupti architecto sit error numquam modi eveniet nam!
         Possimus, corrupti error molestias iure reiciendis ex exercitationem illum. Ex temporibus magni culpa adipisci qui, modi officiis minima itaque rerum soluta? Odio ab nam dolorem corrupti harum reprehenderit minima obcaecati?
         Nobis delectus velit vitae! Doloribus ducimus debitis illum voluptates ea! Corrupti voluptatem sequi asperiores itaque ratione, tenetur maiores dignissimos architecto vel delectus praesentium alias provident ex velit aliquam. Ab, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum maxime, quae exercitationem ullam accusantium at unde quis a voluptatum natus reiciendis obcaecati aperiam eius aliquid commodi dolore! Soluta, beatae quaerat.Quis impedit voluptate corporis recusandae voluptates neque ut culpa consequuntur et accusantium beatae, excepturi accusamus veniam incidunt. Nesciunt aspernatur itaque esse ut, ullam dolorum iste officiis doloribus sed laudantium quia.</p>
@@ -13,7 +13,21 @@
       </div>
     </div>
   </section>
-  <section id="formation"></section>
+  <section id="formation">
+    <h1 class="text-center display-3">Formation</h1>
+    <div class="row container">
+      <div class="col-md-4 col-sm-12" *ngFor="let formation of formations">
+        <div class="card">
+          <img class="card-img-top" style="height:200px" [src]="formation.img" [alt]="formation.title">
+          <div class="card-body">
+            <h4 class="card-title">{{formation.title}}</h4>
+            <p class="card-text">{{formation.text}} </p>
+            <button class="btn btn-dark"><a href="#" class="card-link">More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <section id="events"></section>
   <section id="sponsors"></section>
 
@@ -22,3 +36,4 @@
   <section id="contact"></section>
   
 </main>
+

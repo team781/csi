@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.body{
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
 .scrolltop i{
-    
-   
     font-size: 25px;
     padding: 7px;
     color: white;
@@ -13,10 +16,12 @@
     position: fixed;
     bottom: 20px;
     right: 50px;
-    transition: all 0.5s ease; 
+    transition: all 1s ease; 
     margin-right: -200px;
+    opacity:0
 }
 .appear{
     margin: 0;
-    z-index: 10000
+    z-index: 10000;
+    opacity: 1;
 }

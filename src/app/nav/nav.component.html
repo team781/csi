@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-sm navbar-dark fluid-container desktop sticky-top" [class.header-scrolled]="scrolled">
-  <a class="navbar-brand animated fadeInLeftBig" >Logo</a>
+  <a class="navbar-brand animated fadeInLeftBig" ><img src="../assets/img/logo.png" alt="logo"></a>
   <ul class="navbar-nav mt-2 mt-lg-0 ml-auto">
     <li class="nav-item animated fadeInRightBig">
       <a class="nav-link" routerLink="/">Home</a>
     </li>
-    <li class="nav-item  animated fadeInRightBig">
+    <li class="nav-item animated fadeInRightBig">
       <a class="nav-link" routerLink="/presentations">Présentation</a>
     </li>
     <li class="nav-item dropdown animated fadeInRightBig">
@@ -36,10 +36,10 @@
   </ul>
 </nav>
 
-<nav class="navbar navbar-expand-sm bg-dark mobile sticky-top">
-    <a class="navbar-brand wow fadeInLeftBig" href="#">Logo</a>
+<nav class="navbar navbar-expand-sm mobile sticky-top">
+    <a class="navbar-brand wow fadeInLeftBig" href="#"><img src="../assets/img/logo.png" alt="logo"></a>
     <span class="bg-light burger" (click)="show=!show"><i class="fas fa-align-justify"></i></span>
-    <ul class="d-flex flex-column bg-dark" [class.open]="show">
+    <ul class="d-flex flex-column" [class.open]="show">
         <li class="nav-item animated" [class.fadeInRightBig]="show">
             <a class="nav-link" routerLink="/" (click)="show=!show">Home</a>
           </li>
@@ -50,10 +50,10 @@
             <a class="nav-link" routerLink="/formations" (click)="show=!show">Formations</a>
           </li>
           <li class="nav-item dropdown animated" [class.fadeInRightBig]="show">
-            <a class="nav-link dropdown-toggle"  routerLink="/evenements" (click)="show=!show" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <a class="nav-link dropdown-toggle"  routerLink="/evenements" id="dropdownId" data-toggle="dropdown">Dropdown</a>
             <div class="dropdown-menu" aria-labelledby="dropdownId">
-              <a class="dropdown-item" href="#">Hack Me If You Can</a>
-              <a class="dropdown-item" href="#">Hack Zone</a>
+              <a class="dropdown-item" href="#" (click)="show=!show">Hack Me If You Can</a>
+              <a class="dropdown-item" href="#" (click)="show=!show">Hack Zone</a>
             </div>
           </li>
           <!-- <li class="nav-item animated " [class.fadeInRightBig]="show" >
@@ -73,7 +73,7 @@
           </li>
     </ul>
 </nav>
-<div id="carouselId" class="carousel slide" data-ride="carousel">
+<div id="carouselId" class="carousel slide" data-ride="carousel" data-interval="5000">
   <ol class="carousel-indicators">
     <li data-target="#carouselId" data-slide-to="0" class="active"></li>
     <li data-target="#carouselId" data-slide-to="1"></li>
@@ -82,15 +82,15 @@
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
       <img src="https://www.numerama.com/content/uploads/2019/08/hacker-capuche-concours.jpg" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h3 class="display-2">CSI</h3>
+      <div class="carousel-caption d-none d-md-block images">
+        <h3 class="display-2 animated bounceInDown">CSI</h3>
         <p class="animated fadeInLeft">Description</p>
         <button class="btn btn-outline-light animated fadeInRight">discover us</button>
       </div>
     </div>
     <div class="carousel-item">
       <img src="https://www.cpomagazine.com/wp-content/uploads/2019/10/cozy-bear-is-back-in-the-spotlight-notorious-russian-hackers-caught-spying-on-eu-and-eastern-european-nations_1500.jpg" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-caption d-none d-md-block images">
         <h3>Title</h3>
         <p>Description</p>
       </div>

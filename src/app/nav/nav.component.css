@@ -35,8 +35,12 @@
 }
 .mobile{
     display: none;
+    background: black;
 }
-
+.navbar-brand img{
+  width: 200px;
+  height: 60px
+}
 .dropdown-menu{
   background: rgb(53, 36, 36);
 }
@@ -57,10 +61,11 @@
 .carousel-caption{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 .carousel-caption > * {
-  position: relative
+  position: relative;
+  animation-delay: 0.5s;
 }
 
 
@@ -84,8 +89,9 @@
     justify-content: space-around;
     align-items: center;
     z-index: 1;
-    clip-path: circle(100px at 90% -10%);
+    clip-path: circle(100px at 90% -20%);
     transition: all 1s ease;
+    background-color: black;
   }
   .open {
     clip-path: circle(700px at 90% 10%);
