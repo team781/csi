@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { NgwWowService } from 'ngx-wow';
+
 
 @Component({
   selector: 'app-root',
@@ -14,4 +16,8 @@ export class AppComponent {
     if(window.scrollY > 150) this.scrolltop = true
     else this.scrolltop = false
   }
+  constructor(private wowService: NgwWowService) {
+    this.wowService.init();
+  }
+
 }
