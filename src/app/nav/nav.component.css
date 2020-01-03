@@ -20,7 +20,7 @@
   animation-delay: 2.1s;
 }
 .nav-link:hover, .nav-link:focus{
-  color: blue !important
+  color:#16daf0 !important
 }
 .desktop{
   transition: all 0.4s ease;
@@ -47,6 +47,7 @@
 }
 .dropdown-item{
   color: white;
+  
 }
 .dropdown-item:hover{
   background: white;
