@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+/* color : 16daf0 */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 .body{
     margin: 0;
     padding:0;
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 .scrolltop i{
     font-size: 25px;
