@@ -8,15 +8,8 @@
 }
 .title{
   padding: 30px 0;
-  animation : title 0.5s ease infinite alternate
 }
 .para{
   margin: 10% 0;
 }
 
-@keyframes title{
-  from{transform: scale(1)}
-  to{
-    transform: scale(1.1)
-  }
-}

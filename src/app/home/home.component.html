@@ -1,16 +1,35 @@
 <main>
   <section id="presentation">
-    <h1 class="display-3 text-center hacked title">Presentation</h1>
+    <h1
+      class="display-3 text-center hacked title wow lightSpeedIn"
+      data-wow-offset="120"
+    >
+      Presentation
+    </h1>
     <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <img class="image" style="position:absolute"  src="../assets/img/logo.png" alt="csi">
+      <div class="col-md-4 wow flipInY" data-wow-offset="150">
+        <img class="image" src="../assets/img/logo.png" alt="csi" />
       </div>
-      <div class="col-md-8 col-sm-12 text-white para">
-        <p> Club Sécurité Informatique de l'Ecole Nationale des Sciences de l'Informatique
-          Campus Mannouba
-          
-          Historique:
-          Le club sécurité informatique de l’ENSI est né suite à des discussions récurrentes qui se déroulaient entre des étudiants autour de l’importance de la sécurité et de l’omniprésence de risques potentiels dans un monde de plus en plus connecté. Ces discussions ont fait découvrir aux participants l’étendue du domaine de la sécurité informatique et les connaissances que pouvait apporter chacun dans un des différents aspects de cette discipline. Par ailleurs, et au fil des discussions, le besoin d’étendre ces connaissances et les partager avec le plus possibles de personnes passionnées par ce domaine s’est fait sentir, d’où l’idée qui a émergé pour réunir ces personnes au sein d’un club. Tout de suite après, les premières démarches ont été entamés par les étudiants pour créer ce club jusqu'à ce que leurs efforts aboutissent le 6 octobre 2010 par la création officielle du club sécurité informatique avec comme membres fondateurs BEN AYED Wassim et HAJRI Mahdi..</p>
+      <div class="col-md-8 col-sm-12 text-white para ">
+        <p class="wow fadeInRight pr-5" data-wow-offset="150">
+          Club Sécurité Informatique de l'Ecole Nationale des Sciences de
+          l'Informatique Campus Mannouba Historique: Le club sécurité
+          informatique de l’ENSI est né suite à des discussions récurrentes qui
+          se déroulaient entre des étudiants autour de l’importance de la
+          sécurité et de l’omniprésence de risques potentiels dans un monde de
+          plus en plus connecté. Ces discussions ont fait découvrir aux
+          participants l’étendue du domaine de la sécurité informatique et les
+          connaissances que pouvait apporter chacun dans un des différents
+          aspects de cette discipline. Par ailleurs, et au fil des discussions,
+          le besoin d’étendre ces connaissances et les partager avec le plus
+          possibles de personnes passionnées par ce domaine s’est fait sentir,
+          d’où l’idée qui a émergé pour réunir ces personnes au sein d’un club.
+          Tout de suite après, les premières démarches ont été entamés par les
+          étudiants pour créer ce club jusqu'à ce que leurs efforts aboutissent
+          le 6 octobre 2010 par la création officielle du club sécurité
+          informatique avec comme membres fondateurs BEN AYED Wassim et HAJRI
+          Mahdi..
+        </p>
         <button class="btn btn-dark">Know us More</button>
       </div>
     </div>
@@ -20,18 +39,25 @@
     <div class="row container">
       <div class="col-md-4 col-sm-12" *ngFor="let formation of formations">
         <div class="card">
-          <img class="card-img-top" style="height:200px" [src]="formation.img" [alt]="formation.title">
+          <img
+            class="card-img-top"
+            style="height:200px"
+            [src]="formation.img"
+            [alt]="formation.title"
+          />
           <div class="card-body">
-            <h4 class="card-title">{{formation.title}}</h4>
-            <p class="card-text">{{formation.text}} </p>
-            <button class="btn btn-dark"><a href="#" class="card-link">More</a></button>
+            <h4 class="card-title">{{ formation.title }}</h4>
+            <p class="card-text">{{ formation.text }}</p>
+            <button class="btn btn-dark">
+              <a href="#" class="card-link">More</a>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </section>
   <section id="events">
-    <h1 class="text-center display-3 hacked">Evénement</h1>
+    <h1 class="text-center display-3 hacked">Evenements</h1>
   </section>
   <section id="sponsors">
     <h1 class="text-center display-3 hacked">Sponsors</h1>
@@ -40,6 +66,4 @@
   <section id="temoignage"></section>
   <section id="magazine"></section>
   <section id="contact"></section>
-  
 </main>
-

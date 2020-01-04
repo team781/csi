@@ -13,14 +13,14 @@
     padding:0;
     overflow: hidden;
     font-family: 'Montserrat', sans-serif;
-    /* font-family: "hacked"; */
 }
 .scrolltop i{
     font-size: 25px;
-    padding: 7px;
+    padding: 10px;
     color: white;
     background-color: black;
     cursor: pointer;
+    border-radius: 50%;
     z-index: 3;
 }
 .scrolltop{
@@ -29,10 +29,31 @@
     right: 50px;
     transition: all 1s ease; 
     margin-right: -200px;
-    opacity:0
+    opacity:0;
+  
 }
 .appear{
     margin: 0;
-    z-index: 10000;
+    z-index: 100;
     opacity: 1;
+}
+.preloader-left{
+    position: fixed;
+    top:0;
+    left:0;
+    right:50%;
+    bottom:0;
+    background-color: black;
+    z-index: 9999;
+    pointer-events: none;
+}
+.preloader-right{
+    position: fixed;
+    top:0;
+    left:50%;
+    right:0;
+    bottom:0;
+    background-color: black;
+    z-index: 9999;
+    pointer-events: none;
 }
