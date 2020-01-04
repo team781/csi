@@ -24,34 +24,48 @@
 }
 .desktop{
   transition: all 0.4s ease;
-  box-shadow: 0 0 0 0 white;
+  box-shadow: 0 0 0 1px white;
   position : fixed;
   width: 100%;
+  background: rgb(49, 48, 48);
+  font-family: "hacked";
+}
+.nav-link{
+  color: white !important;
+  transition : all 0.2s ease;
+}
+.nav-link:hover{
+  transform : scale(1.2);
+  margin : 0 10px;
+  
+ 
 }
 .header-scrolled{
-  padding-top: 20px ;
-  padding-bottom: 20px;
+  padding-top: 15px ;
+  padding-bottom: 15px;
   background-color: rgba(206, 206, 206,0.9);
   box-shadow: 0 1px 1px 1px white;
 }
 .mobile{
     display: none;
-    background: black;
-}
+    background: rgb(49, 48, 48);
+  }
 .navbar-brand img{
   width: 200px;
-  height: 60px
+  height: 60px;
+  margin: -10px 0;
 }
 .dropdown-menu{
-  background: rgb(53, 36, 36);
+  /* background: rgb(53, 36, 36); */
+  background-color: #16daf0 !important;
+  animation-duration: 0.3s;
 }
 .dropdown-item{
   color: white;
-  
 }
 .dropdown-item:hover{
-  background: white;
-  color: black
+  background: black ;
+  color:  #16daf0
 }
 .carousel-item{
   width: 100%;
@@ -59,14 +73,21 @@
 }
 .carousel-item > img{
   width: 100%;
-  height: 100%;
+  height: 100%
 }
 .carousel-caption{
-  margin-bottom: 4%
+  margin-bottom: 10%;
 }
 .carousel-caption > * {
   position: relative;
   animation-delay: 0.5s;
+  transition : all 0.5s ease;
+}
+.carousel-caption button:hover{
+  font-family: "hacked";
+}
+.canyou{
+  background : #16daf0;
 }
 
 
@@ -77,6 +98,9 @@
   }
   .mobile {
     display: block;
+    position: fixed;
+    width: 100%;
+    font-family: "hacked";
   }
   .d-flex > li {
     list-style-type: none;
@@ -92,7 +116,7 @@
     z-index: 1;
     clip-path: circle(100px at 90% -20%);
     transition: all 1s ease;
-    background-color: black;
+    background: rgb(49, 48, 48);
   }
   .open {
     clip-path: circle(700px at 90% 10%);
@@ -106,5 +130,8 @@
     right: 5%;
     transform: translate(-5%, -50%);
     cursor: pointer;
+  }
+  .nav-link{
+    z-index: 0 !important;
   }
 }
