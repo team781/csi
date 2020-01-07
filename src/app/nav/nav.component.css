@@ -22,7 +22,7 @@
 .nav-item:nth-child(8) {
   animation-delay: 3.1s;
 }
-.nav-link:hover, .nav-link:focus{
+.nav-link:hover, .nav-link:focus, .header-scrolled .nav-link:hover, .header-scrolled .nav-link:focus{
   color:#16daf0 !important
 }
 .desktop{
@@ -48,6 +48,10 @@
   padding-bottom: 15px;
   background-color: rgba(206, 206, 206,0.9);
   box-shadow: 0 1px 1px 1px white;
+ 
+}
+.header-scrolled .nav-link{
+  color: black !important
 }
 .mobile{
     display: none;

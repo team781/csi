@@ -25,10 +25,9 @@ export class AppComponent {
       preloaderLeft.classList.add("slideOutLeft")
       preloaderRight.classList.add("slideOutRight")
     },1000)
-    
   }
   constructor(private wowService: NgwWowService, private el: ElementRef) {
     this.wowService.init();
   }
-
+  
 }

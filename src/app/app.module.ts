@@ -5,13 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
-import { NgwWowModule } from 'ngx-wow'
+import { NgwWowModule } from 'ngx-wow';
+import { HomeFormationDirective } from './home-formation.directive';
+import { PreloaderComponent } from './preloader/preloader.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    HomeFormationDirective,
+    PreloaderComponent
   ],
   imports: [
     BrowserModule,

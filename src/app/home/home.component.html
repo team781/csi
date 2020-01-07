@@ -7,11 +7,11 @@
       Presentation
     </h1>
     <div class="row">
-      <div class="col-md-4 wow flipInY" data-wow-offset="150">
+      <div class="col-md-4 wow flipInY" data-wow-offset="150" data-wow-delay="250">
         <img class="image" src="../assets/img/logo.png" alt="csi" />
       </div>
       <div class="col-md-8 col-sm-12 text-white para ">
-        <p class="wow fadeInRight pr-5" data-wow-offset="150">
+        <p class="wow fadeInRight pr-5" data-wow-offset="150" data-wow-delay='500'>
           Club Sécurité Informatique de l'Ecole Nationale des Sciences de
           l'Informatique Campus Mannouba Historique: Le club sécurité
           informatique de l’ENSI est né suite à des discussions récurrentes qui
@@ -35,23 +35,19 @@
     </div>
   </section>
   <section id="formation">
-    <h1 class="text-center display-3 hacked">Formation</h1>
+    <h1 class="text-center text-white display-3 hacked title wow lightSpeedIn" data-wow-offset="120">Formation</h1>
     <div class="row container">
-      <div class="col-md-4 col-sm-12" *ngFor="let formation of formations">
-        <div class="card">
-          <img
-            class="card-img-top"
-            style="height:200px"
+      <div class="col-md-4 col-sm-12 my-5" *ngFor="let formation of formations;index as i" >
+        <div class="box" appHomeFormation   [style]="formation.delay">
+          <img class="wow slideInLeft " 
+          style="height:200px;"
             [src]="formation.img"
             [alt]="formation.title"
           />
-          <div class="card-body">
-            <h4 class="card-title">{{ formation.title }}</h4>
-            <p class="card-text">{{ formation.text }}</p>
-            <button class="btn btn-dark">
-              <a href="#" class="card-link">More</a>
-            </button>
-          </div>
+          <div class="formation animated flipOutY"> 
+            <h4>{{ formation.title }}</h4>
+            <button class="btn btn-outline-light">See More</button>
+          </div> 
         </div>
       </div>
     </div>
