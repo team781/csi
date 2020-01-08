@@ -58,9 +58,9 @@
     background: rgb(49, 48, 48);
   }
 .navbar-brand img{
-  width: 200px;
+  width: 80px;
   height: 60px;
-  margin: -10px 0;
+  margin: -10px 20px;
 }
 .dropdown-menu{
   /* background: rgb(53, 36, 36); */

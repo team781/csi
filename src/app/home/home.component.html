@@ -7,7 +7,7 @@
       Presentation
     </h1>
     <div class="row">
-      <div class="col-md-4 wow flipInY" data-wow-offset="150" data-wow-delay="250">
+      <div class="col-md-4 wow flipInY my-5" data-wow-offset="150" data-wow-delay="250">
         <img class="image" src="../assets/img/logo.png" alt="csi" />
       </div>
       <div class="col-md-8 col-sm-12 text-white para ">
@@ -30,17 +30,17 @@
           informatique avec comme membres fondateurs BEN AYED Wassim et HAJRI
           Mahdi..
         </p>
-        <button class="btn btn-dark">Know us More</button>
+        <button class="btn btn-dark wow fadeInRight" data-wow-offset="150" data-wow-delay="100">Know us More</button>
       </div>
     </div>
   </section>
   <section id="formation">
     <h1 class="text-center text-white display-3 hacked title wow lightSpeedIn" data-wow-offset="120">Formation</h1>
-    <p class="text-white font-weight-bold text-center" style="font-size: 25px;">On presente à nos membres des formations variees citons : </p>
+    <p class="text-white font-weight-bold text-center wow fadeIn" data-wow-offset="150" data-wow-delay="100" style="font-size: 25px;">On presente à nos membres des formations variees citons : </p>
     <div class="row container m-auto">
       <div class="col-md-4 col-sm-12 my-5" *ngFor="let formation of formations;index as i" >
         <div class="box" appHomeFormation>
-          <img class="wow slideInLeft " 
+          <img class="wow jackInTheBox" data-wow-offset="150" 
           style="height:200px;"
             [src]="formation.img"
             [alt]="formation.title"
