@@ -1,5 +1,6 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
 import { NgwWowService } from 'ngx-wow';
+import jump from 'jump.js'
 
 
 @Component({
@@ -25,6 +26,9 @@ export class AppComponent {
       preloaderLeft.classList.add("slideOutLeft")
       preloaderRight.classList.add("slideOutRight")
     },1000)
+  }
+  scrollTop(){
+    jump(- window.scrollY)
   }
   constructor(private wowService: NgwWowService, private el: ElementRef) {
     this.wowService.init();

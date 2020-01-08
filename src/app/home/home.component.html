@@ -36,10 +36,10 @@
   </section>
   <section id="formation">
     <h1 class="text-center text-white display-3 hacked title wow lightSpeedIn" data-wow-offset="120">Formation</h1>
-    <p class="text-white font-weight-bold" style="font-size: 25px;">On presente à nos membres des formations variees citons : </p>
-    <div class="row container">
+    <p class="text-white font-weight-bold text-center" style="font-size: 25px;">On presente à nos membres des formations variees citons : </p>
+    <div class="row container m-auto">
       <div class="col-md-4 col-sm-12 my-5" *ngFor="let formation of formations;index as i" >
-        <div class="box" appHomeFormation   [style]="formation.delay">
+        <div class="box" appHomeFormation>
           <img class="wow slideInLeft " 
           style="height:200px;"
             [src]="formation.img"
@@ -54,10 +54,10 @@
     </div>
   </section>
   <section id="events">
-    <h1 class="text-center display-3 hacked">Evenements</h1>
+    
   </section>
   <section id="sponsors">
-    <h1 class="text-center display-3 hacked">Sponsors</h1>
+
   </section>
 
   <section id="temoignage"></section>

@@ -1,4 +1,5 @@
 <app-nav></app-nav>
 <app-preloader></app-preloader>
 <router-outlet></router-outlet>
-<span class="scrolltop" [class.appear]="scrolltop"><i class="fas fa-angle-double-up"></i></span>
+<app-footer></app-footer>
+<span class="scrolltop" (click)="scrollTop()" [class.appear]="scrolltop"><i class="fas fa-angle-double-up"></i></span>

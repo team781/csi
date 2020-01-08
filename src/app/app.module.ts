@@ -7,7 +7,8 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { NgwWowModule } from 'ngx-wow';
 import { HomeFormationDirective } from './home-formation.directive';
-import { PreloaderComponent } from './preloader/preloader.component'
+import { PreloaderComponent } from './preloader/preloader.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PreloaderComponent } from './preloader/preloader.component'
     NavComponent,
     HomeComponent,
     HomeFormationDirective,
-    PreloaderComponent
+    PreloaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

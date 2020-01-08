@@ -7,8 +7,7 @@ export class HomeFormationDirective {
   
   
   
-  constructor(private el: ElementRef) {   
-  }
+  constructor(private el: ElementRef) {}
   @HostListener("mouseover") enter(){
     let formation = this.el.nativeElement.querySelector(".formation")
     formation.classList.add("zoomIn")
@@ -19,8 +18,6 @@ export class HomeFormationDirective {
     let formation = this.el.nativeElement.querySelector(".formation")
     formation.classList.add("zoomOut")
     formation.classList.remove("zoomIn")
-
-    
   }
   
 
